@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
+            integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=="
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Frontend Mentor | Product preview card component</title>
+
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+            body {
+                background-color: hsl(30, 38%, 92%);
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 90vh;
+            }
+
+            .img .mobile {
+                display: none;
+            }
+
+            p {
+                color: hsl(228, 12%, 48%);
+                font-family: "Montserrat", sans-serif;
+            }
+
+            .content {
+                position: relative;
+                bottom: 2px;
+                width: 220px;
+                height: 380px;
+                background-color: hsl(0, 0%, 100%);
+                padding: 35px;
+                border-radius: 0 8px 8px 0;
+            }
+
+            .img img {
+                border-radius: 8px 0 0 8px;
+            }
+
+            h1 {
+                padding-top: -0.5rem;
+                padding-right: 20px;
+            }
+
+            .button {
+                text-align: center;
+                padding-top: 1rem;
+            }
+
+            .button a {
+                display: block;
+                text-decoration: none;
+                background-color: hsl(158, 36%, 37%);
+                color: hsl(0, 0%, 100%);
+                border-radius: 5px;
+                font-size: 16px;
+                width: inherit;
+                padding: 10px;
+            }
+
+            .button a:hover {
+                background-color: hsl(157, 34%, 26%);
+            }
+
+            span {
+                color: hsl(158, 36%, 37%);
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            s {
+                padding-left: 2.5rem;
+                color: hsl(228, 12%, 48%);
+                font-size: small;
+            }
+
+            @media (width <= 591px) {
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 30px;
+                }
+
+                .img .desktop {
+                    display: none;
+                }
+
+                .img .mobile {
+                    display: flex;
+                    justify-content: center;
+                    width: 330px;
+                    border-radius: 8px 8px 0 0;
+                }
+
+                .content {
+                    border-radius: 0 0 8px 8px;
+                    height: 65%;
+                    padding: 0 20px 20px 20px;
+                    width: 290px;
+                }
+
+                h1 {
+                    margin-top: 0;
+                }
+
+                .attribution {
+                    margin-top: 2rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="img">
+                <img
+                    src="images/image-product-desktop.jpg"
+                    alt="gabrielle_perfume"
+                    width="300"
+                    height="450"
+                    class="desktop"
+                />
+                <img
+                    src="images/image-product-mobile.jpg"
+                    alt="gabrielle_perfume_mobile"
+                    class="mobile"
+                />
+            </div>
+            <div class="content">
+                <p id="perfume">PERFUME</p>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+                <p>
+                    A floral, solar and voluptuous interpretation composed by
+                    Olivier Polge, Perfumer-Creator for the House of CHANEL.
+                </p>
+                <div class="prices">
+                    <span>$149.99</span>
+                    <s>$169.99</s>
+                </div>
+                <div class="button">
+                    <a href="#"
+                        ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">komlan-roland</a>.
+        </div>
+    </body>
+</html>
