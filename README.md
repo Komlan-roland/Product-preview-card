@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [product preview card](https://frontendmentor-preview-card.netlify.app/)
 - Live Site URL: [Add live site URL here](https://frontendmentor-preview-card.netlify.app/)
 
 
