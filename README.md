@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [product preview card](https://frontendmentor-preview-card.netlify.app/)
-- Live Site URL: [Add live site URL here](https://frontendmentor-preview-card.netlify.app/)
+- Live Site URL: [frontend mentor](https://frontendmentor-preview-card.netlify.app/)
 
 
 ### Built with
